@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Coba CSS</title>
+    <title>Nesting</title>
+    <link rel="stylesheet" href="scss/main.css">
 </head>
 <body>
+    <div class="container">
+        <section class="main">
+            <div class="main-heading">
+                <h1>Kevin Williams</h1>
+            </div>
 
-    <header>
-        <h1>Hello World!</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis blanditiis error aliquam aut consequatur non. Numquam consectetur harum fugit nesciunt ipsam vel est earum adipisci ducimus maiores! Illum, a ipsam.</p>
-    </header>
+            <div class="main-paragraph">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur neque labore iste. In harum officiis qui, quae dolorum velit excepturi inventore obcaecati, debitis veritatis sequi eaque placeat soluta ab praesentium.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-heading">
+            <h1>Footer</h1>
+        </div>
+        <div class="footer-paragraph">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit blanditiis odit eaque esse ex nemo. Nostrum quae, repudiandae vel consequatur nobis laudantium rem numquam temporibus laborum totam eos consequuntur accusamus?</p>
+        </div>
+    </footer>
     
 </body>
 </html>
