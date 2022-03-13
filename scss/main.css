@@ -1,16 +1,4 @@
-.main .main-heading {
-  font-size: 2em;
-}
-
-.main .main-paragraph {
-  font-size: 1.4em;
-}
-
-.footer .footer-heading {
-  font-size: 1.5em;
-}
-
-.footer .footer-paragraph {
-  font-size: 1em;
+h1 {
+  color: orange;
 }
 /*# sourceMappingURL=main.css.map */

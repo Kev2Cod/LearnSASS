@@ -1,55 +1,53 @@
-// .main{
-//     background-color: lightcoral;
+//CSS Variabel
 
-//     .main-heading{
-//         font-size: 2em;
-//     }
-
-//     .main-paragraph{
-//         font-size: 1.4em;
-//     }
-
-// }
-
-// .main, footer{
-//     h1, p{
-//         letter-spacing: 1px;
-//     }
+// :root{
+//     --primary-color: rgb(230, 225, 225);
+//     --secondary-color: rgb(243, 172, 78);
+//     --text-color: rgb(100, 74, 3);
 // }
 
 
-// & 
-// Parent Selector 
-// .main{
-//     .container &{
-//         background-color: lightblue;
-//     }
-
-//     .h1{
-//         font-size: 2em;
-//     }
-
-//     &:hover{
-//         background-color: salmon;
-//     }
+// body{
+//     background-color: var(--primary-color);
 // }
 
-.main{
-    #{&}-heading{
-        font-size: 2em;
-    }
+// h1{
+//     color: var(--secondary-color);
+// }
 
-    #{&}-paragraph{
-        font-size: 1.4em;
-    }
-}
+// p{
+//     color: var(--text-color);
+// }
 
-.footer{
-    #{&}-heading{
-        font-size: 1.5em;
-    }
+// SASS Variabel
 
-    #{&}-paragraph{
-        font-size: 1em;
-    }
+// $secondary-color: rgb(243, 172, 78);
+// $text-color:rgb(100, 74, 3);
+
+// body {
+//     $primary-color: rgb(230, 225, 225) !global;
+//     background-color: $primary-color;
+// }
+
+// h1 {
+//     color: $primary-color;
+// }
+
+// p {
+//     color: $text-color;
+// }
+
+// Map
+// $alert-danger: red;
+// $alert-warning: orange;
+// $alert-success: green;
+
+$alert: (
+    'danger' : red,
+    'warning': orange,
+    'success' : green
+);
+
+h1{
+    color: map-get($map: alert, $key: warning)
 }
